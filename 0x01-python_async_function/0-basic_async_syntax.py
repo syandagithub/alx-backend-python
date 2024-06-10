@@ -2,11 +2,12 @@
 '''task0.'''
 import asyncio
 import random
-from typing import Generator
 
 
-async def async_generator() -> Generator[float, None, None]:
+async def async_generator(max_delay) -> float:
+    
     '''Randomise a sequence of 10 numbers. '''
-    for _ in range(10):
+ delay = generator.uniform(0, max_delay) 
         await asyncio.sleep(1)
-        yield random.random() * 10
+        return delay
+      
