@@ -4,10 +4,10 @@ import asyncio
 import random
 
 
-async def async_generator(max_delay) -> float:
+async def async_random(max_dela: float = 10.0) -> float:
     
     '''Randomise a sequence of 10 numbers. '''
- delay = generator.uniform(0, max_delay) 
+ delay = random.uniform(0, max_delay) 
         await asyncio.sleep(1)
         return delay
       
